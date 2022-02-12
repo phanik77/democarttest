@@ -8,13 +8,13 @@ import org.openqa.selenium.support.PageFactory;
 public class LoginPage extends BasePage {
 	WebDriver driver;
 
-	@FindBy(id = "txtUsername")
+	@FindBy(id = "input-email")
 	public WebElement username;
 
-	@FindBy(id = "txtPassword")
+	@FindBy(id = "input-password")
 	public WebElement password;
 
-	@FindBy(id = "btnLogin")
+	@FindBy(xpath = "//form//input[@type='submit']")
 	public WebElement loginbtn;
 
 	// ****************Initialize****************//
